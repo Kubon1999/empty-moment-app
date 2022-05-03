@@ -1,0 +1,38 @@
+{
+  "titles" : [
+    { 
+      "title": "1. React Tools",
+      "questions" : [
+        {
+        "question" : "Are the packages installed per project?",
+        "answer" : "Yes"
+        },
+        {
+        "question" : "Are 2f2efthe packages installed per project?2",
+        "answer" : "Yes2"
+        },
+        {
+        "question" : "Are ef2efefthe packages installed per project?3",
+        "answer" : "Yes3"
+        }
+      ]
+    },
+    {
+      "title" : "2. React 2 ",
+      "questions" : [
+      {
+      "question" : "Are the packages installed per project?",
+      "answer" : "Yes"
+      },
+      {
+      "question" : "Are 2f2efthe packages installed per project?2",
+      "answer" : "Yes2"
+      },
+      {
+      "question" : "Are ef2efefthe packages installed per project?3",
+      "answer" : "Yes3"
+      }
+      ]
+    }
+  ]
+}
