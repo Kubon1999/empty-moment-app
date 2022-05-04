@@ -1,37 +1,149 @@
 {
-  "titles" : [
-    { 
-      "title": "1. React Tools",
-      "questions" : [
+  "titles": [
+    {
+      "title": "react1",
+      "questions": [
         {
-        "question" : "Are the packages installed per project?",
-        "answer" : "Yes"
+          "question": "Basic information about hooks:",
+          "answers": [
+            { "answer": "hooks always start with use." },
+            {
+              "answer": "almost always hooks are going to be in the top first lines of the component"
+            },
+            { "answer": "useState is 95% of what you are going to use." }
+          ]
         },
         {
-        "question" : "Are 2f2efthe packages installed per project?2",
-        "answer" : "Yes2"
+          "question": "CODE: standard, one line, one parameter, no parameters, anonymous ARROW FUNCTION",
+          "answers": [
+            { "answer": "standard: let sum = (a,b) => { return a+b }" },
+            {
+              "answer": "one line: let sum = (a,b) => a+b"
+            },
+            {
+              "answer": "one parameter: let isPositive = number => number >= 0"
+            },
+            {
+              "answer": "no parameters: let randomNumber = () => Math.random"
+            },
+            { "answer": "anonymous: () => { console.log('Click') }" }
+          ]
         },
         {
-        "question" : "Are ef2efefthe packages installed per project?3",
-        "answer" : "Yes3"
+          "question": "What are the two ways of assigning onChange to a function?",
+          "answers": [
+            { "answer": "onChange={(e) => setLocation(e.target.value)}" },
+            {
+              "answer": "onChange={updateLocation}"
+            },
+            {
+              "answer": "where updateLocation is a function that contains one line: setLocation(e.target.value)"
+            }
+          ]
+        },
+        {
+          "question": "Can you put hooks inside of for loops and if statements?",
+          "answers": [
+            {
+              "answer": "NO, never do that. You can configure ESLINT to now allow to do that."
+            }
+          ]
+        },
+        {
+          "question": "What is destructuring?",
+          "answers": [
+            {
+              "answer": "const [location, setLocation] = useState('Seattle, WA')"
+            },
+            {
+              "answer": "It is `[location, setLocation]` so we are destructuring the constant into two constants"
+            }
+          ]
+        },
+        {
+          "question": "Is index a good thing to have for key property in list?",
+          "answers": [
+            {
+              "answer": "no, if you move index = 0 to index 1 and index 1 to index = 0 the indexes wouldnt  change because the key is constant"
+            }
+          ]
+        },
+        {
+          "question": "Basics of useState",
+          "answers": [
+            {
+              "answer": "Whatever you put into useState, it is going to return the same type. So if you put a string it returns a string."
+            },
+            {
+              "answer": "if you put a string here, it expects animal to also be a string whenever you call setAnimal"
+            },
+            { "answer": "const [animal, setAnimal] = useState(””) ;" }
+          ]
+        },
+        {
+          "question": "What is useEffect?",
+          "answers": [
+            {
+              "answer": "It allows you to have side effects in your application. "
+            },
+            {
+              "answer": "For these particular search parameters (animal=dog) i want to call API and fetch particular available categories (breeds where animal=dog)."
+            }
+          ]
+        },
+        {
+          "question": "What is the difference in NODE_ENV= production vs development?",
+          "answers": [
+            {
+              "answer": "The development has a variety of tools for a developer to debug (eg. the key error messages)."
+            },
+            {
+              "answer": "Publishing your product in production makes it 4 times smaller/faster"
+            },
+            {
+              "answer": "how to set it: package.json -> scripts -> 'build' : 'parcel build src/index.html'"
+            }
+          ]
+        },
+        {
+          "question": "What is StrickMode?",
+          "answers": [
+            {
+              "answer": "It is an additional help(warnings) from the react team"
+            },
+            {
+              "answer": "You use it like that: <StrictMode> <App /> </StrictMode>"
+            }
+          ]
+        },
+        {
+          "question": "What does react extension in chrome do?",
+          "answers": [
+            {
+              "answer": "Components: you can see the components edit their state see by whom are they rendered"
+            },
+            {
+              "answer": "Profiler: record , do some actions on the site THEN stop recording and see the performance of actions."
+            }
+          ]
         }
       ]
     },
     {
-      "title" : "2. React 2 ",
-      "questions" : [
-      {
-      "question" : "Are the packages installed per project?",
-      "answer" : "Yes"
-      },
-      {
-      "question" : "Are 2f2efthe packages installed per project?2",
-      "answer" : "Yes2"
-      },
-      {
-      "question" : "Are ef2efefthe packages installed per project?3",
-      "answer" : "Yes3"
-      }
+      "title": "2. React 2 ",
+      "questions": [
+        {
+          "question": "Are the packages installed per project?",
+          "answer": "Yes"
+        },
+        {
+          "question": "Are 2f2efthe packages installed per project?2",
+          "answer": "Yes2"
+        },
+        {
+          "question": "Are ef2efefthe packages installed per project?3",
+          "answer": "Yes3"
+        }
       ]
     }
   ]
