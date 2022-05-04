@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Navbar variant="light" expand="sm" collapseOnSelect>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/empty-moment-app/">
             <img src={logo} className="logo" />
             Empty Time App
           </Navbar.Brand>
@@ -20,14 +20,14 @@ function App() {
           <Navbar.Collapse>
             <Nav>
               <NavDropdown title="Quizes" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/quiz/react1/0">
+                <NavDropdown.Item href="/empty-moment-app/quiz/react1/0">
                   React #1
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/quiz/react2/0">
+                <NavDropdown.Item href="/empty-moment-app/quiz/react2/0">
                   React #2
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/adv_javascript">
+                <NavDropdown.Item href="/empty-moment-app/adv_javascript">
                   Advanced JavaScript
                 </NavDropdown.Item>
               </NavDropdown>
@@ -41,8 +41,14 @@ function App() {
         <div className="border rounded m-3 p-3">
           <Router>
             <Routes>
-              <Route path="/" element={<QuizzesList />}></Route>
-              <Route path="/quiz/:title/:id" element={<QuizModule />}></Route>
+              <Route
+                path="/empty-moment-app/"
+                element={<QuizzesList />}
+              ></Route>
+              <Route
+                path="/empty-moment-app/quiz/:title/:id"
+                element={<QuizModule />}
+              ></Route>
             </Routes>
           </Router>
         </div>

@@ -106,7 +106,7 @@
           ]
         },
         {
-          "question": "What is StrickMode?",
+          "question": "What is StrictMode?",
           "answers": [
             {
               "answer": "It is an additional help(warnings) from the react team"

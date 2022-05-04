@@ -48,7 +48,10 @@ const QuizModule = () => {
 
         <div className="d-flex justify-content-center m-3">
           {showAnswer ? (
-            <Button variant="primary" href={`/quiz/${title}/${new_id}`}>
+            <Button
+              variant="primary"
+              href={`/empty-moment-app/quiz/${title}/${new_id}`}
+            >
               Next question
             </Button>
           ) : (
