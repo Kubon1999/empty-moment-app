@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/empty-moment-app/static/css/main.073c9b0a.css",
-    "main.js": "/empty-moment-app/static/js/main.7f91037c.js",
+    "main.css": "/empty-moment-app/static/css/main.ae15baa1.css",
+    "main.js": "/empty-moment-app/static/js/main.0a5109d9.js",
     "static/js/787.b859b993.chunk.js": "/empty-moment-app/static/js/787.b859b993.chunk.js",
-    "static/media/logo.svg": "/empty-moment-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.png": "/empty-moment-app/static/media/logo.f701ec876e3756c18d77.png",
     "index.html": "/empty-moment-app/index.html",
-    "main.073c9b0a.css.map": "/empty-moment-app/static/css/main.073c9b0a.css.map",
-    "main.7f91037c.js.map": "/empty-moment-app/static/js/main.7f91037c.js.map",
+    "main.ae15baa1.css.map": "/empty-moment-app/static/css/main.ae15baa1.css.map",
+    "main.0a5109d9.js.map": "/empty-moment-app/static/js/main.0a5109d9.js.map",
     "787.b859b993.chunk.js.map": "/empty-moment-app/static/js/787.b859b993.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7f91037c.js"
+    "static/css/main.ae15baa1.css",
+    "static/js/main.0a5109d9.js"
   ]
 }
