@@ -1,11 +1,11 @@
-
+import { Button } from "react-bootstrap";
 
 const Quiz = (props) => {
-    //const {title, questions} = props
+  return (
+    <Button variant="primary" className="w-25 p-2">
+      {props.title}
+    </Button>
+  );
+};
 
-    return (
-        <h1>{props.title}</h1>
-    )
-}
-
-export default Quiz
+export default Quiz;
