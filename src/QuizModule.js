@@ -2,6 +2,7 @@ import questions from "./questions.json";
 import { useParams } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const QuizModule = () => {
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,6 +32,11 @@ const QuizModule = () => {
     new_id = getRandomInt(0, count - 1);
   }
 
+  function clickHandler(e) {
+    //e.preventDefault();
+    setShowAnswer(false);
+  }
+
   return (
     <>
       <div className="d-flex flex-column">
@@ -48,12 +54,15 @@ const QuizModule = () => {
 
         <div className="d-flex justify-content-center m-3">
           {showAnswer ? (
-            <Button
-              variant="primary"
-              href={`/empty-moment-app/quiz/${title}/${new_id}`}
+            <Link
+              to={{
+                pathname: `/empty-moment-app/quiz/${title}/${new_id}`,
+                state: { showAnswer: false },
+              }}
+              onClick={(e) => clickHandler(e)}
             >
-              Next question
-            </Button>
+              <Button variant="primary">Next question</Button>
+            </Link>
           ) : (
             <Button variant="primary" onClick={answerSubmitted}>
               Submit
