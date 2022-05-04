@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/empty-moment-app/static/css/main.ae15baa1.css",
-    "main.js": "/empty-moment-app/static/js/main.52275698.js",
+    "main.js": "/empty-moment-app/static/js/main.a6d6f7a7.js",
     "static/js/787.b859b993.chunk.js": "/empty-moment-app/static/js/787.b859b993.chunk.js",
     "static/media/logo.png": "/empty-moment-app/static/media/logo.f701ec876e3756c18d77.png",
     "index.html": "/empty-moment-app/index.html",
     "main.ae15baa1.css.map": "/empty-moment-app/static/css/main.ae15baa1.css.map",
-    "main.52275698.js.map": "/empty-moment-app/static/js/main.52275698.js.map",
+    "main.a6d6f7a7.js.map": "/empty-moment-app/static/js/main.a6d6f7a7.js.map",
     "787.b859b993.chunk.js.map": "/empty-moment-app/static/js/787.b859b993.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae15baa1.css",
-    "static/js/main.52275698.js"
+    "static/js/main.a6d6f7a7.js"
   ]
 }
