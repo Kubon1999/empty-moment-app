@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 const QuizModule = () => {
   const [showAnswer, setShowAnswer] = useState(false);
+  const [textField, setTextField] = useState("");
+
   const { title, id } = useParams();
   let question = "not found";
   let count,
@@ -22,19 +24,15 @@ const QuizModule = () => {
     setShowAnswer(true);
   };
 
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-  let new_id = 0;
-  while (new_id == id) {
-    new_id = getRandomInt(0, count - 1);
+  let new_id = id;
+  new_id++;
+  if (new_id >= count) {
+    new_id = 0;
   }
 
-  function clickHandler(e) {
-    //e.preventDefault();
+  function nextQuestionHandler() {
     setShowAnswer(false);
+    setTextField("");
   }
 
   return (
@@ -42,14 +40,19 @@ const QuizModule = () => {
       <div className="d-flex flex-column">
         <div className="d-flex justify-content-center">
           <p>
-            {title}, question nr: {id}
+            {title}, question No. {id}
           </p>
         </div>
         <div className="d-flex justify-content-center m-3">
           <h5>{question}</h5>
         </div>
         <div className="d-flex justify-content-center m-3">
-          <textarea className="form-control" rows="5"></textarea>
+          <textarea
+            className="form-control"
+            rows="5"
+            value={textField}
+            onChange={(e) => setTextField(e.target.value)}
+          ></textarea>
         </div>
 
         <div className="d-flex justify-content-center m-3">
@@ -59,7 +62,7 @@ const QuizModule = () => {
                 pathname: `/empty-moment-app/quiz/${title}/${new_id}`,
                 state: { showAnswer: false },
               }}
-              onClick={(e) => clickHandler(e)}
+              onClick={nextQuestionHandler}
             >
               <Button variant="primary">Next question</Button>
             </Link>
@@ -76,7 +79,7 @@ const QuizModule = () => {
         {showAnswer
           ? answers.map((elem, key) => {
               return (
-                <div className="d-flex justify-content-left m-3">
+                <div className="d-flex justify-content-left m-3" key={key}>
                   <p> • {elem.answer}</p>
                 </div>
               );

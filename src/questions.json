@@ -1,7 +1,7 @@
 {
   "titles": [
     {
-      "title": "react1",
+      "title": "react_v2",
       "questions": [
         {
           "question": "Basic information about hooks:",
@@ -130,19 +130,184 @@
       ]
     },
     {
-      "title": "2. React 2 ",
+      "title": "react_v1",
       "questions": [
         {
-          "question": "Are the packages installed per project?",
-          "answer": "Yes"
+          "question": "What is Redux?",
+          "answers": [
+            {
+              "answer": "Redux is a state management paradigm based on Facebooks Flux architecture."
+            },
+            {
+              "answer": "Redux provides a structure for a large state trees and allows you to decouple user interaction in your app from state change."
+            }
+          ]
         },
         {
-          "question": "Are 2f2efthe packages installed per project?2",
-          "answer": "Yes2"
+          "question": "What is GraphQL?",
+          "answers": [
+            {
+              "answer": "Powerful, typed, REST API alternative where client describes the data it needs."
+            }
+          ]
         },
         {
-          "question": "Are ef2efefthe packages installed per project?3",
-          "answer": "Yes3"
+          "question": "What is Relay?",
+          "answers": [
+            {
+              "answer": "Glue between GraphQL and React. Relay is data-fetching library that makes it easy to write flexible, performant apps without a lot of data-fetching code."
+            }
+          ]
+        },
+        {
+          "question": "What does JavaScript ES6/ES7 mean?",
+          "answers": [
+            {
+              "answer": "ECMAScript or ES - you can think of a ES6 as a 6th version of javascript."
+            }
+          ]
+        },
+        {
+          "question": "What does framework do when inputs for a component change?",
+          "answers": [
+            {
+              "answer": "Re-renders that component."
+            }
+          ]
+        },
+        {
+          "question": "What is JSX?",
+          "answers": [
+            {
+              "answer": "JSX (JavaScript eXtension syntax), a syntax extension for JavaScript written by Facebook."
+            },
+            {
+              "answer": "Using JSX enables us to write the markup for our component views in a familiar, HTML-like syntax."
+            },
+            {
+              "answer": "In the end, this JSX code compiles to vanilla JavaScript."
+            }
+          ]
+        },
+        {
+          "question": "nativeHTML vs ReactComponent naming",
+          "answers": [
+            {
+              "answer": "In React, native HTML elements always start with a lowercase letter whereas React component names always start with an uppercase letter."
+            }
+          ]
+        },
+        {
+          "question": "What does braces in id={product.id} mean?",
+          "answers": [
+            {
+              "answer": "In JSX, braces are a delimiter, signaling to JSX that what resides in-between the braces is a JavaScript expression."
+            }
+          ]
+        },
+        {
+          "question": "Why should you choose let and const instead of var?",
+          "answers": [
+            {
+              "answer": "In addition to the restriction introduced by const, both const and let are block scoped as opposed to function scoped. "
+            },
+            {
+              "answer": "This scoping can help avoid unexpected bugs. "
+            }
+          ]
+        },
+        {
+          "question": "What is the key property in a list?",
+          "answers": [
+            {
+              "answer": "React uses this special property to create unique bindings for each instance of the Product component.  "
+            },
+            {
+              "answer": "Even if the key prop is not used by our component, the React framework will use it. "
+            }
+          ]
+        },
+        {
+          "question": "What is one-way data flow?",
+          "answers": [
+            {
+              "answer": "React favors the idea of one-way data flow."
+            },
+            {
+              "answer": "This means that data changes come from the “top” of the app and are propagated “downwards” through its various components. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "advanced_javascript",
+      "questions": [
+        {
+          "question": "Are functions in javascript = first class objects?",
+          "answers": [
+            {
+              "answer": "Yes they can co-exist and can be treated like any other javascript object."
+            },
+            {
+              "answer": "1. Assigned to variables and properties of other objects"
+            },
+            {
+              "answer": "2. Passed as arguments into functions"
+            },
+            {
+              "answer": "3. Returned as values from functions"
+            }
+          ]
+        },
+        {
+          "question": "Callback function vs Higher Order Function",
+          "answers": [
+            {
+              "answer": "Callback function is a function that we insert into another function (in arg)"
+            },
+            {
+              "answer": "Higher-order function is the one that we insert the callback function into"
+            }
+          ]
+        },
+        {
+          "question": "What is Closure?",
+          "answers": [
+            {
+              "answer": "a function with its own memory"
+            },
+            {
+              "answer": "Thanks to that we can for example check how many times the function was called."
+            }
+          ]
+        },
+        {
+          "question": "How to return a function from another function?",
+          "answers": [
+            {
+              "answer": "for example you have a function1 declared in another function0."
+            },
+            {
+              "answer": "you can just put 'return function1' in function0"
+            }
+          ]
+        },
+        {
+          "question": "When we call a function outside the function call in which it was defined, do we have access to other things that were inside the function that it was declared in?",
+          "answers": [
+            {
+              "answer": "yes we have when a function returns a function it also returns the local memory that was inside the function, so we have access to the function variables ouside in the global scope"
+            }
+          ]
+        },
+        {
+          "question": "Where is the surrounding data of function in function stored?",
+          "answers": [
+            {
+              "answer": "in [[scope]] property [[ means it is hidden property"
+            }
+          ]
         }
       ]
     }

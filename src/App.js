@@ -5,8 +5,15 @@ import QuizzesList from "./QuizzesList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import QuizModule from "./QuizModule";
 import Quiz from "./Quiz";
+import questions from "./questions.json";
 
 function App() {
+  //get the titles from quizes and apply them to the navbar categories
+  const titles = [];
+  questions.titles.forEach((titleElement) => {
+    titles.push(titleElement.title);
+  });
+
   return (
     <div className="App">
       <Navbar variant="light" expand="sm" collapseOnSelect>
@@ -19,19 +26,18 @@ function App() {
           <Navbar.Toggle />
           <Navbar.Collapse>
             <Nav>
-              <NavDropdown title="Quizes" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/empty-moment-app/quiz/react1/0">
-                  React #1
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/empty-moment-app/quiz/react2/0">
-                  React #2
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/empty-moment-app/adv_javascript">
-                  Advanced JavaScript
-                </NavDropdown.Item>
+              <NavDropdown title="Quizzes" id="basic-nav-dropdown">
+                {titles.map((elem, key) => {
+                  return (
+                    <NavDropdown.Item
+                      href={`/empty-moment-app/quiz/${elem}/0`}
+                      key={key}
+                    >
+                      {elem}
+                    </NavDropdown.Item>
+                  );
+                })}
               </NavDropdown>
-              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
